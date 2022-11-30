@@ -8,7 +8,7 @@
   --secondary-bg-color: #2f303a;
   --secondary-text-color: #757575;
   --button-bg-color: #f5f4fa;
-  --section-team-color: #f5f 4fa;
+  --section-team-color: #f5f4fa;
 }
 
 body {
@@ -222,6 +222,8 @@ img {
   align-items: center;
   text-align: center;
   padding: 10px 32px;
+
+  cursor: pointer;
 }
 
 .section-title {
@@ -765,24 +767,21 @@ BACKDROP AND MODAL CODE
   text-align: center;
 }
 
-.modal__form-group {
-  display: flex;
-  flex-direction: column;
-}
-
 .modal__form-field {
+  margin-bottom: 10px;
+
   display: block;
   position: relative;
+}
 
-  transition: border 2550ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.modal__form-field:nth-child(4) {
+  margin-bottom: 20px;
 }
 
 .modal__form-input {
-  margin-bottom: 10px;
   padding-left: 40px;
 
-  width: 448px;
+  width: 100%;
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -810,7 +809,7 @@ BACKDROP AND MODAL CODE
 
 .modal__form-icon {
   position: absolute;
-  top: 29px;
+  top: 50%;
   left: 12px;
 
   transition: fill 250ms;
@@ -823,10 +822,10 @@ BACKDROP AND MODAL CODE
 }
 
 .modal__form-message {
-  margin-bottom: 20px;
   padding: 12px 16px;
 
   width: 448px;
+  height: 120px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -851,11 +850,12 @@ textarea:focus-visible {
 }
 
 .modal__form-agreement {
+  margin-bottom: 30px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 9px;
-  margin-bottom: 30px;
 }
 
 .modal__form-agreement-text {
